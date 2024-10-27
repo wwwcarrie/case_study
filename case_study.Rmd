@@ -1,0 +1,29 @@
+---
+title: "Case_study"
+output: github_document
+date: "2024-10-27"
+---
+
+```{r}
+library(p8105.datasets)
+library(dplyr)
+
+data(nyc_airbnb)
+```
+
+```{r}
+str(nyc_airbnb)
+# strcture of the dataset, provides information like variables: numeric, character, and number of observations
+
+nyc_airbnb |> 
+  count(room_type)
+
+nyc_airbnb |>
+  count(neighbourhood_group)
+```
+
+
+
+
+
+
